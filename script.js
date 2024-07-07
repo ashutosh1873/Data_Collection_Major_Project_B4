@@ -75,7 +75,7 @@ document.getElementById("projectForm").addEventListener("submit", function(event
         } : null
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbzGvh7xKpB7SD08lLhVzifQTsb1vrQlJLDjfOzruR9RKDG6hnBS35X7jlo2-9n76m7YKQ/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwFshc1UDKXi5e4z6PhxxrHYOlP2ijGsYCikfw8W4wFaoEXNki_Ps8wsuH-9dQ9wDPLaA/exec', {
         method: 'POST',
         body: JSON.stringify(formData)
     }).then(response => response.json())
