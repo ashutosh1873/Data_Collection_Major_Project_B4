@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic and Group Submitting Form for Major Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Topic and Group Name Submission Form for Major Project - B4</h1>
+        <h1>Session: 2024-25</h1>
+        <form id="projectForm">
+            <label for="topic">Name of the Topic:</label>
+            <input type="text" id="topic" name="topic" required>
+
+            <label for="description">Project/Topic Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="groupMembers">Number of Group Members:</label>
+            <select id="groupMembers" name="groupMembers" onchange="toggleMemberFields()" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <div id="member1">
+                <h3>Group Member 1</h3>
+                <label for="rollNo1">AKTU Roll No:</label>
+                <input type="text" id="rollNo1" name="rollNo1" required>
+                <br>
+                <label for="name1">Student Name:</label>
+                <input type="text" id="name1" name="name1" required>
+            </div>
+
+            <div id="member2" style="display: none;">
+                <h3>Group Member 2</h3>
+                <label for="rollNo2">AKTU Roll No:</label>
+                <input type="text" id="rollNo2" name="rollNo2">
+                <br>
+                <label for="name2">Student Name:</label>
+                <input type="text" id="name2" name="name2">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
